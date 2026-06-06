@@ -1,0 +1,56 @@
+[
+  {
+    "input": "Doctor appointment June 18 at 3pm",
+    "expectedIntent": "CAPTURE",
+    "expectedCategory": "CALENDAR",
+    "expectedWidget": "Calendar event saved"
+  },
+  {
+    "input": "Need to buy cat food tomorrow",
+    "expectedIntent": "CAPTURE",
+    "expectedCategory": "TASK",
+    "expectedWidget": "Task saved"
+  },
+  {
+    "input": "Check out Dune Part Two",
+    "expectedIntent": "CAPTURE",
+    "expectedCategory": "RECOMMENDATION",
+    "expectedWidget": "Recommendation saved"
+  },
+  {
+    "input": "Business idea: app that sorts brain dumps into calendars and lists",
+    "expectedIntent": "CAPTURE",
+    "expectedCategory": "IDEA",
+    "expectedWidget": "Idea saved"
+  },
+  {
+    "input": "Do I have plans tonight at 5?",
+    "expectedIntent": "ASK",
+    "expectedCategory": "BRAIN_DUMP",
+    "expectedWidget": "Search calendar in tonight window"
+  },
+  {
+    "input": "I'm bored",
+    "expectedIntent": "ASSIST",
+    "expectedCategory": "BRAIN_DUMP",
+    "expectedWidget": "Boredom Busters"
+  },
+  {
+    "input": "I can't start cleaning the garage",
+    "expectedIntent": "ASSIST",
+    "expectedCategory": "BRAIN_DUMP",
+    "expectedWidget": "Micro-step support"
+  },
+  {
+    "input": "Remember that Dan mentioned the new sushi place",
+    "expectedIntent": "CAPTURE",
+    "expectedCategory": "RECOMMENDATION or NOTE depending on confidence",
+    "expectedWidget": "Ask one tap if ambiguous"
+  },
+  {
+    "input": "Melt it: call Dan, buy cat food, schedule dentist, watch Metallica documentary",
+    "expectedIntent": "MULTI",
+    "expectedCategory": "TASK, TASK, TASK/CALENDAR, RECOMMENDATION",
+    "expectedWidget": "Melt Summary"
+  }
+]

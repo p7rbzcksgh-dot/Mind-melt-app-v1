@@ -1,0 +1,19 @@
+{
+  "name": "mindmelt-dashboard-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Flat GitHub-ready MindMelt dashboard prototype with ADHD-informed decision engine logic.",
+  "scripts": {
+    "start": "node server.mjs",
+    "test:logic": "node testLogic.mjs"
+  },
+  "keywords": [
+    "adhd",
+    "productivity",
+    "single-entry",
+    "dashboard",
+    "prototype"
+  ],
+  "license": "UNLICENSED"
+}

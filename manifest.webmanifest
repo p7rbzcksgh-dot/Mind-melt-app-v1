@@ -1,0 +1,21 @@
+{
+  "name": "MindMelt Dashboard Prototype",
+  "short_name": "MindMelt",
+  "description": "A calm single-entry dashboard for ADHD-friendly capture, sorting, and focus.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#05070c",
+  "theme_color": "#05070c",
+  "icons": [
+    {
+      "src": "assets/mindmelt-app-icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/mindmelt-mark.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

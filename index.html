@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#05070c" />
+    <meta name="description" content="MindMelt ADHD-friendly single entry dashboard prototype." />
+    <title>MindMelt Dashboard v0</title>
+    <link rel="icon" href="assets/mindmelt-mark.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/mindmelt-app-icon.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="phone-shell">
+      <main class="app" aria-label="MindMelt dashboard">
+        <header class="topbar" aria-label="Dashboard controls">
+          <button class="icon-button" id="menuButton" type="button" aria-label="Open MindMelt menu">
+            <span class="hamburger" aria-hidden="true"></span>
+          </button>
+          <button class="icon-button" id="noticeButton" type="button" aria-label="Open attention items">
+            <span class="bell" aria-hidden="true">♢</span>
+          </button>
+        </header>
+
+        <section class="brand" aria-label="MindMelt brand">
+          <img class="logo-mark" src="assets/mindmelt-logo-mark.png" alt="MindMelt logo mark" />
+          <h1 aria-label="MindMelt">MIND<span class="warm">M</span><span class="cool">ELT</span></h1>
+          <p class="tagline"><span class="one">Capture.</span> <span class="two">Organize.</span> <span class="three">Focus.</span></p>
+        </section>
+
+        <form class="entry-form" id="entryForm" aria-label="Universal entry bar">
+          <button class="entry-action" id="meltButton" type="button" aria-label="Melt this brain dump" title="Melt this brain dump">+</button>
+          <input id="entryInput" name="entry" type="text" autocomplete="off" spellcheck="true" placeholder="Type literally anything..." aria-label="Type literally anything" />
+          <button class="voice-action" id="micButton" type="button" aria-label="Voice capture placeholder" title="Voice capture placeholder">◉</button>
+        </form>
+
+        <section class="focus-area" id="focusArea" aria-live="polite" aria-label="Focus Area"></section>
+
+        <nav class="icon-dock" id="dock" aria-label="MindMelt sections"></nav>
+        <p class="status-line" id="appStatus" role="status">Ready</p>
+      </main>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

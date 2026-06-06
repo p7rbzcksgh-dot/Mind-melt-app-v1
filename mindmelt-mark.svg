@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">MindMelt logo mark</title>
+  <desc id="desc">A split geometric M in orange red and blue gradients.</desc>
+  <defs>
+    <linearGradient id="warm" x1="132" y1="112" x2="242" y2="395" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB000"/>
+      <stop offset="0.55" stop-color="#FF5A1F"/>
+      <stop offset="1" stop-color="#FF2525"/>
+    </linearGradient>
+    <linearGradient id="cool" x1="270" y1="104" x2="390" y2="397" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#19C7FF"/>
+      <stop offset="0.55" stop-color="#1180FF"/>
+      <stop offset="1" stop-color="#123DFF"/>
+    </linearGradient>
+    <filter id="glow" x="80" y="70" width="360" height="380" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 1 0 0 0 0 .33 0 0 0 0 .08 0 0 0 .25 0"/>
+      <feBlend in="SourceGraphic" mode="normal"/>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#05070C"/>
+  <g filter="url(#glow)">
+    <path d="M133 112c0-11 12-18 22-12l103 66c8 5 13 14 13 24v94c0 10-11 16-20 11l-57-36v135c0 10-11 16-20 11l-31-20c-6-4-10-11-10-18V112Z" fill="url(#warm)"/>
+    <path d="M210 304c0-10 11-16 20-11l42 27v80c0 10-11 16-20 11l-32-20c-6-4-10-11-10-18v-69Z" fill="url(#warm)"/>
+    <path d="M379 112c0-11-12-18-22-12l-103 66c-8 5-13 14-13 24v94c0 10 11 16 20 11l57-36v135c0 10 11 16 20 11l31-20c6-4 10-11 10-18V112Z" fill="url(#cool)"/>
+    <path d="M302 304c0-10-11-16-20-11l-42 27v80c0 10 11 16 20 11l32-20c6-4 10-11 10-18v-69Z" fill="url(#cool)"/>
+  </g>
+</svg>
